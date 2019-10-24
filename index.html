@@ -1,2 +1,51 @@
 <html>
 <body>
+<h1>Prep for 10/29</h1>
+    <h2>Inner Join</h2>
+    <p>Inner Join is an SQL command that allows you to link two different tables together whether it is to see all of the data, combine data, and more. The two different tables that you are merging need to have one category between them that is the same, as you have to set two categories equal to each other. To start off with inner join, you need to have a select command. Select acts like normal, except if you want to select a specific category you have to put "Table.Category", so within the SQL Database we've been working with a select command for two different tables would look like:</p>
+    <p>
+    SELECT Orders.OrderDate, Shippers.ShipperName
+    </p>
+    <p>
+    This would return just those two categories later on once we call those two categories. The next syntax is FROM, and you will just call one of the databases that you will work with. Pulling from our example SQL database we will use Orders. This is the same as if you were only using Orders normally, so nothing changes here
+    </p>
+    <p>
+    Next we begin to use the inner join command. Inner Join is like one of our other power words, so we put INNER JOIN. Next, after INNER JOIN we put the other table that we want to pull in. As said earlier, we are going to use the Shippers table, so we put INNER JOIN Shippers. Next you have to put ON, which is the syntax used to link the two charts. Next, you put your two categories that are the same, with their tables in front, and an equal sign in between them. So this would look like Orders.ShipperID = Shippers.ShipperID
+    </p>
+    <p>
+    All together this syntax looks like:
+    </p>
+    <p>
+        SELECT * // or (SELECT Orders.OrderDate, Shippers.ShipperName) if you are wanting to select specific categories as mentioned earlier</p>
+    <p>FROM [Orders]</p>
+    <p>
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+    </p>
+    <p>
+    These are all of the components to describe inner join and how to make it work.
+    </p>
+<h2>Data Scientists</h2>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
